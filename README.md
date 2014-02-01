@@ -38,7 +38,7 @@ Register services provided by the bundle by adding the following line to the imp
 ```
 
 Define the following properties in your parameters.yml:  
-* twentysteps_placetel.url - URL of the Placetel API - normally should point to "https://placetel.de/api/".
+* twentysteps_placetel.url - URL of the Placetel API - normally should point to "https://api.placetel.de/api/".
 * twentysteps_placetel.api_key - API key of your account at Placetel.
 * twentysteps_placetel.timeout - Timeout in seconds to apply on calls of the Placetel API - you should use 10.
 * twentysteps_placetel.connect_timeout - Connect timeout in seconds to apply on calls to the Placetel API - you should use 5.
