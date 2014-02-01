@@ -1,0 +1,13 @@
+parameters:
+
+services:
+
+    twentysteps_placetel.service:
+        class: twentysteps\Bundle\PlacetelBundle\Services\PlacetelService
+        arguments: [@logger,@liip_doctrine_cache.ns.control, @twentysteps_placetel.client, %twentysteps_placetel.api_key%, %twentysteps_placetel.timeout%, %twentysteps_placetel.connect_timeout%, %twentysteps_placetel.cache_ttl%]
+
+    twentysteps_placetel.client: 
+        class: %guzzle.client.class%
+        arguments: [ %twentysteps_placetel.url% ]
+        tags:
+            - { name: guzzle.client }

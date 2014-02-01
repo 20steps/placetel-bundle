@@ -1,0 +1,25 @@
+{
+    "name": "20steps/placetel-bundle",
+    "type": "symfony-bundle",
+    "description": "Service-oriented Placetel API for Symfony2 applications",
+    "keywords": ["placetel","api","soa","sf2","accounting"],
+    "homepage": "https://github.com/20steps/placetel-bundle",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Helmut Hoffer von Ankershoffen",
+            "email": "helmuthva@20steps.de",
+            "homepage": "http://20steps.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    	"symfony/framework-bundle": "~2.3",
+        "misd/guzzle-bundle": "~1.0",
+        "liip/doctrine-cache-bundle": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "twentysteps\\Bundle\\PlacetelBundle": "" }
+    },
+    "target-dir": "twentysteps/Bundle/PlacetelBundle"
+}
