@@ -55,6 +55,7 @@ class PlacetelService {
 		                'connect_timeout' => $this->connectTimeout
 		        ));
                 $response=$request->send()->json();
+                var_dump($response);
 		    } catch (\Exception $e) {
 		    	$this->logger->info($e->getMessage());
 		    	return null;
@@ -75,14 +76,19 @@ class PlacetelService {
         if ($calls && is_array($calls)) {
             $count=0;
             foreach ($calls as $call) {
+                echo "in call\n";
                 if ($callTypeFilter && $call['callType']!=$callTypeFilter) {
+                    echo "continuing because of callType";
                     continue;
                 }
                 if ($toNumber && $call['toNumber']!=$toNumber) {
+                    echo "continuing because of toNumber";
                     continue;
                 }
+                echo "increased count ...";
                 $count++;
             }
+            echo "returning ".$count."\n";
             return $count;
         }
         return 0;
