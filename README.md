@@ -11,7 +11,7 @@ For further information about Placetel goto http://www.placetel.de.
 - [x] Placetel accessible as a configurable Symfony2 service.
 - [ ] Complete API for Placetel.
 - [x] Configurable caching of responses to prevent surpassing rate limit.
-- [ ] Provide some derived KPIs.
+- [x] Provide some derived KPIs.
 - [ ] Full documentation and some examples.
 - [ ] Prepare for open sourcing of 20steps control.
 
